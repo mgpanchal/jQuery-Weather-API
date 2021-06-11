@@ -7,15 +7,10 @@
 <body>
 
     <script src="js/jquery-3.6.0.js"></script>
-
+    <script src="js/weather_api.js"></script>
     <script>
-        
-        var CityName = "Pune";
-        var APIKey = "7312787cc87e04d375dc4906a2c8a25e";
 
-        jQuery.getJSON("api.openweathermap.org/data/2.5/weather?q=Pune&appid={API key}", [], function (json) {
-            console.log(json);
-        })
+        console.log(getWeatherByCityName("buldhana"));
 
     </script>
 
