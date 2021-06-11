@@ -1,10 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
+    <title>jQuery Weather API</title>
+    <meta charset="utf-8" />
 </head>
 <body>
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script>
+        
+        var CityName = "";
+        var APIKey = "";
+
+        jQuery.getJSON("api.openweathermap.org/data/2.5/weather?q=Pune&appid={API key}", [], function (json) {
+            console.log(json);
+        })
+
+    </script>
 
 </body>
 </html>
